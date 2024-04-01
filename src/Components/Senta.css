@@ -1,9 +1,9 @@
-
+/* Senta.css */
 .senta {
   position: absolute;
   width: 100px;
   height: 100px;
-  transition: left 1s linear, top 1s linear;
+  transition: left 4s ease, top 4s ease; /* Adjust the duration for even slower movement */
 }
 
 .senta img {
