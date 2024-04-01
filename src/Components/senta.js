@@ -5,11 +5,12 @@ import './Senta.css';
 const Senta = ({ clickPosition }) => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [direction, setDirection] = useState('right');
+  console.log("directiondirectiondirection----->",direction);
 
   useEffect(() => {
     setPosition(clickPosition);
     setDirection(clickPosition.x < position.x ? 'left' : 'right');
-  }, [clickPosition, position.x]);
+  }, [clickPosition]);
 
   return (
     <div
@@ -22,7 +23,9 @@ const Senta = ({ clickPosition }) => {
         height: '100px', 
       }}
     >
-      <img src="https://www.wizard.financial/static/media/wizaart-img.56787174.gif" alt="Senta" style={{ width: '100%', height: '100%' }} />
+      <img src="https://www.wizard.financial/static/media/wizaart-img.56787174.gif" alt="Senta" style={{ width: '100%', height: '100%' 
+    ,transform:'scaleX(-1)',
+    }} />
     </div>
   );
 };
