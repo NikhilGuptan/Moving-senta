@@ -1,0 +1,16 @@
+
+.senta {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  transition: left 1s linear, top 1s linear;
+}
+
+.senta img {
+  width: 100%;
+  height: 100%;
+}
+
+.senta.left {
+  transform: scaleX(-1);
+}
